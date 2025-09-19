@@ -1,0 +1,80 @@
+/* Reset cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Tiêu đề chính */
+h1 {
+    color: #006699;
+    font-size: 28px;
+    border-bottom: 2px solid #006699;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* Đoạn mô tả */
+p {
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+/* Textarea nhập SQL */
+textarea {
+    width: 95%;
+    padding: 10px;
+    font-family: monospace;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+/* Nút Execute */
+input[type="submit"] {
+    background-color: #006699;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #004466;
+}
+
+/* Kết quả SQL */
+.result {
+    margin-top: 20px;
+    overflow-x: auto;
+}
+
+/* Bảng kết quả */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: white;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #006699;
+    color: white;
+    text-align: left;
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+}
