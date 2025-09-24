@@ -21,15 +21,14 @@ public class SQLGatewayServlet extends HttpServlet {
         }
 
         try {
-            // Load SQL Server JDBC driver
-            Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+            // Load PostgreSQL JDBC driver
+            Class.forName("org.postgresql.Driver");
 
-            // Kết nối tới SQL Server
-            String dbURL = "jdbc:sqlserver://localhost:1433;"
-                    + "databaseName=murach;"
-                    + "encrypt=true;trustServerCertificate=true;";
-            String username = "mmud";
-            String password = "nguyenvinhan1706";
+            // Kết nối tới PostgreSQL (Render yêu cầu sslmode=require)
+            String dbURL = "jdbc:postgresql://dpg-d36bh2ogjchc73c608v0-a.oregon-postgres.render.com:5432/dbvinhan?sslmode=require";
+            String username = "vinhan";
+            String password = "aggX9mEugEiBK0r8fiDc1JxVxxh41E8Q";
+
 
             try (Connection connection = DriverManager.getConnection(dbURL, username, password);
                  Statement statement = connection.createStatement()) {
