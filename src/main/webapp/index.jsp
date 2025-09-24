@@ -22,7 +22,7 @@
     <textarea name="sqlStatement" cols="60" rows="8"><%=
     (session.getAttribute("sqlStatement") != null)
             ? session.getAttribute("sqlStatement")
-            : "select * from User;" %></textarea>
+            : "select * from Users;" %></textarea>
     <br>
     <input type="submit" value="Execute">
 </form>
